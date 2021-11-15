@@ -1,0 +1,14 @@
+version: '3'
+services:
+
+  rabbit:
+    image: "rabbitmq:3-management"
+    environment:
+        RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCCLNMEQG"
+        RABBITMQ_DEAFULT_USER: "rabbitmq"
+        RABBITMQ_DEAFULT_PASS: "rabbitmq"
+        RABBITMQ_DEAFULT_VHOST: "/"
+    ports:
+        - "15672:15672"
+        - "5672:5672"
+        
